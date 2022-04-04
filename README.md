@@ -5,10 +5,11 @@
 ## Usage
 
 ```yaml
-- repo: git@github.com:nametake/pre-commit-buf.git
+- repo: git@github.com:shraykay/pre-commit-buf.git
   rev: v2.0.0
   hooks:
     - id: buf-lint
     - id: buf-breaking
       args: [.git#branch=master] # required --against-input arg
+    - id: buf-format
 ```
